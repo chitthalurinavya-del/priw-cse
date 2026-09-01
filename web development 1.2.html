@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS3 & Responsive Architecture</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #062d63;
+    }
+
+    .card {
+      width: 420px;
+      margin: 40px auto;
+      padding: 0 25px 20px;
+      border: 1px solid #dbe3eb;
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+
+    /* Top section */
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px dashed #d9e0e8;
+      font-size: 13px;
+    }
+
+    .due-date {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #28507b;
+    }
+
+    .calendar {
+      font-size: 15px;
+    }
+
+    .due-date strong {
+      color: #082e61;
+    }
+
+    .days-left {
+      padding: 5px 12px;
+      border-radius: 15px;
+      background: #b9f5df;
+      color: #006a5a;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    /* Main content */
+    .content {
+      padding-top: 20px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 19px;
+      line-height: 1.45;
+      color: #071f46;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #062d63;
+    }
+
+    .features-title {
+      margin-bottom: 5px;
+      color: #006cff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #062d63;
+    }
+
+    li {
+      margin-bottom: 6px;
+      padding-left: 2px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .card {
+        width: calc(100% - 30px);
+        margin: 20px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .top {
+        gap: 10px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p,
+      li {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="top">
+      <div class="due-date">
+        <span class="calendar">▣</span>
+        <span>Due Date: <strong>15 Sept 2026</strong></span>
+      </div>
+
+      <span class="days-left">15 Days Left</span>
+    </div>
+
+    <div class="content">
+
+      <h2>
+        Advanced CSS3 &amp; Responsive<br>
+        Architecture
+      </h2>
+
+      <p>
+        Transform the semantic portfolio into a visually
+        stunning, fully responsive design using advanced CSS3
+        properties and modern layout architectures.
+      </p>
+
+      <div class="features-title">Key Features:</div>
+
+      <ul>
+        <li>Utilize CSS Grid for complex, two-dimensional page layouts</li>
+        <li>Employ Flexbox for localized component alignment</li>
+        <li>Implement mobile-first responsive media queries</li>
+        <li>Create custom CSS variables for a dynamic light/dark mode theme</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
